@@ -16,9 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navController = findNavController(R.id.fragment)
-
 
 //        to change the name of actionBar
 //        val appBarConfiguration = AppBarConfiguration(
@@ -27,6 +25,6 @@ class MainActivity : AppCompatActivity() {
 //                        R.id.favoritesMoviesFragment))
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        bottomNavigationView.setupWithNavController(navController)
+        binding.bottomNavigationView.setupWithNavController(navController)
     }
 }
